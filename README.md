@@ -1,6 +1,6 @@
 # Learnings
 
-Table of Contents
+## Table of Contents. 
 [Redis](#redis-host-and-python-redis-package)
 
 # Redis Host and Python `redis` package.
