@@ -1,7 +1,7 @@
 # Learnings
 
 ## Table of Contents. 
-[Redis](#redis-host-and-python-redis-package)
+[Create a Redis Host with Docker](#redis-host-and-python-redis-package)
 
 # Redis Host and Python `redis` package.
 ```shell
