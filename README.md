@@ -1,7 +1,9 @@
-# learnings
+# Learnings
 
+Table of Contents
+[Redis](#redis-host-and-python-redis-package)
 
-# Start a Redis Host which you can connect to with the `redis` Python package.
+# Redis Host and Python `redis` package.
 ```shell
 docker run --name my-redis -p 6379:6379 -d redis
 ```
