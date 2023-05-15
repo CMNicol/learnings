@@ -1,8 +1,8 @@
 # Learnings
 
 ## Table of Contents. 
-[Create a Redis Host with Docker](#redis-host-and-python-redis-package)
-[SaaS Reading](#SaaS-Reading)
+[Create a Redis Host with Docker](#redis-host-and-python-redis-package)  
+[SaaS Reading](#SaaS-Reading)  
 
 # Redis Host and Python `redis` package.
 ```shell
@@ -16,4 +16,9 @@ r.get("hello")
 ```
 
 # SaaS Reading
-[Security practices in AWS multi-tenant SaaS environments](https://aws.amazon.com/blogs/security/security-practices-in-aws-multi-tenant-saas-environments/)
+[Security practices in AWS multi-tenant SaaS environments](https://aws.amazon.com/blogs/security/security-practices-in-aws-multi-tenant-saas-environments/)  
+[https://web.archive.org/web/20150221181153/http://se2.informatik.uni-wuerzburg.de/pa/uploads/papers/paper-371.pdf](https://web.archive.org/web/20150221181153/http://se2.informatik.uni-wuerzburg.de/pa/uploads/papers/paper-371.pdf)  
+[SaaS Tenant Isolation Strategies AWS Whitepaper](https://d1.awsstatic.com/whitepapers/saas-tenant-isolation-strategies.pdf)  
+[]()  
+[]()  
+[]()  
