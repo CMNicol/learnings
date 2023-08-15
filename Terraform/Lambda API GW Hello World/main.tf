@@ -14,8 +14,8 @@ resource "random_pet" "lambda_bucket_name" {
 }
 
 resource "aws_s3_bucket_acl" "bucket_acl" {
-  bucket = aws_s3_bucket.lambda_bucket.id
-  acl    = "private"
+  bucket     = aws_s3_bucket.lambda_bucket.id
+  acl        = "private"
   depends_on = [aws_s3_bucket_ownership_controls.s3_bucket_acl_ownership]
 }
 
@@ -80,8 +80,8 @@ data "aws_iam_policy_document" "assume_role" {
 }
 
 resource "aws_iam_role" "lambda_exec" {
-  name = "serverless_lambda"
-  assume_role_policy = data.aws_iam_policy_document.assume_role.json
+  name                = "serverless_lambda"
+  assume_role_policy  = data.aws_iam_policy_document.assume_role.json
   managed_policy_arns = ["arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"]
 }
 

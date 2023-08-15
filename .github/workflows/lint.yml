@@ -1,0 +1,32 @@
+name: Lint
+on: [push]
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Upgrade Pip
+        run: pip install --upgrade pip
+
+      - name: Install Python Linting Tools
+        run: pip install black 
+
+      - name: Run Black Formatting
+        run: black --check .
+
+      - name: Install Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.5.5
+      
+      - name: Format Terraform
+        run: terraform fmt -recursive -check Terraform/
