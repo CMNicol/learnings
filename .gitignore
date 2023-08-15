@@ -1,1 +1,7 @@
 .vscode
+.DS_Store
+.terraform.lock.hcl
+.terraform
+*.zip
+terraform.tfstate
+terraform.tfstate.backup
