@@ -25,10 +25,10 @@ module "ec2_instance" {
 
   name = "my-ec2-cluster-${count.index}"
 
-  ami                    = "ami-0ed752ea0f62749af"
-  instance_type          = "t2.micro"
-  vpc_security_group_ids = [module.vpc.default_security_group_id]
-  subnet_id              = module.vpc.public_subnets[0]
+  ami                         = "ami-0ed752ea0f62749af"
+  instance_type               = "t2.micro"
+  vpc_security_group_ids      = [module.vpc.default_security_group_id]
+  subnet_id                   = module.vpc.public_subnets[0]
   associate_public_ip_address = true
 
   tags = {

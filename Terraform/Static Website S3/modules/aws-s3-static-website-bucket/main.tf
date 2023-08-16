@@ -1,6 +1,6 @@
 resource "aws_s3_bucket" "s3_bucket" {
   bucket = var.bucket_name
-  tags = var.tags
+  tags   = var.tags
 }
 
 resource "aws_s3_bucket_website_configuration" "s3_bucket" {
@@ -16,8 +16,8 @@ resource "aws_s3_bucket_website_configuration" "s3_bucket" {
 }
 
 resource "aws_s3_bucket_acl" "s3_bucket" {
-  bucket = aws_s3_bucket.s3_bucket.id
-  acl = "public-read"
+  bucket     = aws_s3_bucket.s3_bucket.id
+  acl        = "public-read"
   depends_on = [aws_s3_bucket_ownership_controls.s3_bucket_acl_ownership]
 }
 
@@ -39,7 +39,7 @@ resource "aws_s3_bucket_public_access_block" "s3_bucket" {
 }
 
 resource "aws_s3_bucket_policy" "s3_bucket" {
-  bucket = aws_s3_bucket.s3_bucket.id
+  bucket     = aws_s3_bucket.s3_bucket.id
   depends_on = [aws_s3_bucket_public_access_block.s3_bucket]
   policy = jsonencode({
     Version = "2012-10-17"
