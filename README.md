@@ -15,10 +15,10 @@ r.set("hello","world")
 r.get("hello")
 ```
 
-# SaaS Reading
-[Security practices in AWS multi-tenant SaaS environments](https://aws.amazon.com/blogs/security/security-practices-in-aws-multi-tenant-saas-environments/)  
-[Architectural Concerns in Multi-Tenant SaaS Applications](https://web.archive.org/web/20150221181153/http://se2.informatik.uni-wuerzburg.de/pa/uploads/papers/paper-371.pdf)  
-[SaaS Tenant Isolation Strategies AWS Whitepaper](https://d1.awsstatic.com/whitepapers/saas-tenant-isolation-strategies.pdf)  
-[]()  
-[]()  
-[]()  
+# Misc Dev Reads
+[Zero-Shot Learning in Modern NLP](https://joeddav.github.io/blog/2020/05/29/ZSL.html).  
+[Building LLM-Powered Web Apps with Client-Side Technology](https://ollama.ai/blog/building-llm-powered-web-apps).  
+[Transformers for Tabular Data Representation: A Survey of Models and Applications](https://direct.mit.edu/tacl/article/doi/10.1162/tacl_a_00544/115239/Transformers-for-Tabular-Data-Representation-A).  
+
+# ML Datasets
+[Penn Treebank](https://paperswithcode.com/dataset/penn-treebank)
